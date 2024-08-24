@@ -1,0 +1,25 @@
+<br>
+<div class="row text-center " > 
+    <div class=" col-4">
+    </div>
+    <div class="card col-4">
+        <h4>CALCULADORA </h4>
+                Valor1: <br>
+                <input type="text"  id="valor1" (input)="val1($event)"   placeholder="Ingrese un valor">
+                Valor2: 
+                <br>
+                <input type="text" id="valor2" (input)="val2($event)"  placeholder="Ingrese un valor">
+                Resultado :  
+                <br>
+                <input type="resultado"  disabled [value]="rta">
+                <br>
+                
+                <app-botones [Valoruno]="valor1"[Valordos]="valor2" (RTA)="resultado($event)" ></app-botones>
+           
+    
+    </div>
+    <div class=" col-4">
+    </div>
+</div>
+
+
